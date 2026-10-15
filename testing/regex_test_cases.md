@@ -1,34 +1,22 @@
-# COVID-19 Information Website - Test Report
 
-## Project Details
-- Project Name: COVID-19 Information Website
-- Technologies: HTML, CSS, JavaScript, PHP, MySQL
-- Testing Type: Functional Testing and Regex Testing
+# COVID-19 Information Website
+## Regular Expression (Regex) Test Cases
 
-## Objective
-To verify that the website works correctly and validates user inputs.
+Project: Software Testing and Quality Assurance
 
-## Features Tested
-1. User Registration
-2. User Login
-3. Dashboard Access
-4. Comment Submission
-5. Logout
-6. Regular Expression Validation
+| Test ID | Field | Test Input | Expected Result |
+|---|---|---|---|
+| REG01 | Name | Srushti | Accept |
+| REG02 | Name | 12345 | Reject |
+| REG03 | Email | student@gmail.com | Accept |
+| REG04 | Email | studentgmail.com | Reject |
+| REG05 | Password | Student@123 | Accept |
+| REG06 | Password | abc | Reject |
+| REG07 | Password | student123 | Reject |
+| REG08 | Email | user@ | Reject |
 
-## Test Results
+## Purpose
+To verify that the website accepts valid inputs and rejects invalid inputs.
 
-| Test ID | Test Scenario | Expected Result | Actual Result | Status |
-|---|---|---|---|---|
-| TC01 | Valid Registration | Registration successful | To be tested | Pending |
-| TC02 | Invalid Email | Registration rejected | To be tested | Pending |
-| TC03 | Weak Password | Registration rejected | To be tested | Pending |
-| TC04 | Valid Login | Dashboard opens | Dashboard opened | Pass |
-| TC05 | Invalid Login | Login rejected | To be tested | Pending |
-| TC06 | Submit Comment | Comment saved | Comment visible | Pass |
-| TC07 | Logout | User logged out | To be tested | Pending |
-
-## Conclusion
-The website includes registration, login, dashboard, and comment functionality.
-
-Note: Update test results after performing each test.
+## Note
+Expected results are listed above. Perform each test on the website and record the actual result and Pass/Fail status separately.
